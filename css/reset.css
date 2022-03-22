@@ -78,7 +78,7 @@ input:checked[type=checkbox] {
     background-color: #666;
     -webkit-appearance: checkbox
 }
-
+input:focus {outline:none;}
 
 
 

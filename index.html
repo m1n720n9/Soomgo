@@ -7,7 +7,7 @@
     <title>숨고: 숨은고수 - 600만명이 선택한 생활서비스 고수 매칭</title>
     
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js" defer></script>
@@ -24,6 +24,37 @@
                                 <div class="search_icon"><img src="./img/icon-header-search.svg" alt="검색 아이콘"></div>
                                 <input type="text" name="service_search" id="service_search" placeholder="어떤 서비스가 필요하세요?">
                             </form>
+                            <div class="search_tab_wrap">
+                                <div class="search_tab">
+                                    <div class="tab_title">
+                                        <ul>
+                                            <li class="keyword"><a href="javascript:">인기키워드</a></li>
+                                            <li class="recent"><a href="javascript:">최근 검색한 서비스</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_keyword">
+                                        <ul class="list">
+                                            <li class="item"><a href="javascript:">영어 과외</a></li>
+                                            <li class="item"><a href="javascript:">퍼스널트레이닝(PT)</a></li>
+                                            <li class="item"><a href="javascript:">보컬 레슨</a></li>
+                                            <li class="item"><a href="javascript:">욕실/화장실 리모델링</a></li>
+                                            <li class="item"><a href="javascript:">도배장판 시공</a></li>
+                                            <li class="item"><a href="javascript:">전기 배선 설치 및 수리</a></li>
+                                            <li class="item"><a href="javascript:">집 인테리어</a></li>
+                                            <li class="item"><a href="javascript:">수학 과외</a></li>
+                                            <li class="item"><a href="javascript:">골프 레슨</a></li>
+                                            <li class="item"><a href="javascript:">수도 관련 설치 및 수리</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_recent">
+                                        <p>최근 검색한 내역이 없습니다</p>
+                                    </div>
+                                </div>
+                                <div class="tab_btn">
+                                    <div class="tab_delete">전체 삭제</div>
+                                    <div class="tab_close">닫기</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="h_right">
@@ -74,6 +105,43 @@
                         <input type="text" name="service_search" id="service_search" placeholder="어떤 서비스가 필요하세요?">
                     </form>
                 </div>
+                <div class="search_tab_wrap">
+                    <div class="tab_search">
+                        <form action="#" method="post" name="service_search">
+                            <div class="search_icon"><img src="./img/search_tab_back.svg" alt="뒤로가기"></div>
+                            <input type="text" name="service_search" id="service_search" placeholder="어떤 서비스가 필요하세요?">
+                        </form>
+                    </div>
+                    <div class="search_tab">
+                        <div class="tab_title">
+                            <ul>
+                                <li class="keyword"><a href="javascript:">인기키워드</a></li>
+                                <li class="recent"><a href="javascript:">최근 검색한 서비스</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_keyword">
+                            <ul class="list">
+                                <li class="item"><a href="javascript:">영어 과외</a></li>
+                                <li class="item"><a href="javascript:">퍼스널트레이닝(PT)</a></li>
+                                <li class="item"><a href="javascript:">보컬 레슨</a></li>
+                                <li class="item"><a href="javascript:">욕실/화장실 리모델링</a></li>
+                                <li class="item"><a href="javascript:">도배장판 시공</a></li>
+                                <li class="item"><a href="javascript:">전기 배선 설치 및 수리</a></li>
+                                <li class="item"><a href="javascript:">집 인테리어</a></li>
+                                <li class="item"><a href="javascript:">수학 과외</a></li>
+                                <li class="item"><a href="javascript:">골프 레슨</a></li>
+                                <li class="item"><a href="javascript:">수도 관련 설치 및 수리</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_recent">
+                            <p>최근 검색한 내역이 없습니다</p>
+                        </div>
+                    </div>
+                    <div class="tab_btn">
+                        <div class="tab_delete">전체 삭제</div>
+                        <div class="tab_close">닫기</div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="banner_slider">
@@ -88,6 +156,8 @@
                       <div class="swiper-slide"><a href="javascript:"><img src="./img/banner-slide6.png" alt=""></a></div>
                       <div class="swiper-slide"><a href="javascript:"><img src="./img/banner-slide7.png" alt=""></a></div>
                     </div>
+                    <div class="bannerS_next swiper-button-next"></div>
+                    <div class="bannerS_prev swiper-button-prev"></div>
                 </div>
             </div>
         </section>
@@ -690,7 +760,7 @@
                             (점심시간 13:00 - 14:00 제외 · 주말/공휴일 제외)
                         </p>
                         <a href="javascript:" class="download"><img src="./img/icon-download-appstore.svg" alt="appstore"> APP STORE</a>
-                        <a href="javascript:" class="download"><img src="./img/icon-download-palystore.svg" alt="playstore"> PLAY STORE</a>
+                        <a href="javascript:" class="download mr"><img src="./img/icon-download-palystore.svg" alt="playstore"> PLAY STORE</a>
                     </div>
                     <div class="ft_right">
                         <ul>
@@ -738,7 +808,8 @@
                             <li><a href="javascript:">개인정보처리방침</a></li>
                             <li><a href="javascript:">사업자 정보확인</a></li>
                         </ul>
-                        <p>(주)브레이브모바일은 통신판매중개자로서 통신판매의 당사자가 아니며 개별 판매자가 제공하는 서비스에 대한 이행, 계약사항 등과 관련한 의무와 책임은 거래당사자에게 있습니다.</p>
+                        <p class="p_style">(주)브레이브모바일은 통신판매중개자로서 통신판매의 당사자가 아니며 개별 판매자가 제공하는 서비스에 대한 이행, 계약사항 등과 관련한 의무와 책임은 거래당사자에게 있습니다.</p>
+                        <p>상호명:(주)브레이브모바일 · 대표이사:KIM ROBIN H · 개인정보책임관리자:김태우 · 주소:서울특별시 강남구 테헤란로 415, L7 강남타워 5층</p>
                         <p>사업자등록번호:120-88-22325 · 통신판매업신고증:제 2015-서울강남-00567 호 · 직업정보제공사업 신고번호:서울청 제 2019-21호</p>
                         <p>고객센터:1599-5319 · 이메일:support@soomgo.com</p>
                         <p>Copyright ©Brave Mobile Inc. All Rights Reserved.</p>
