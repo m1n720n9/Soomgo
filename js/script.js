@@ -1,22 +1,54 @@
-const search = document.querySelector('.h_search input');
-const searchBorder = document.querySelector('.h_search');
-const searchWrap = document.querySelector('.search_tab_wrap');
+const searchPc = document.querySelector('.h_search input');
+const searchPcBorder = document.querySelector('.h_search');
+const searchPcWrap = document.querySelector('.h_search .search_tab_wrap');
+const closeBtnPc = document.querySelector('.h_search .search_tab_wrap .tab_close');
+const searchMob = document.querySelector('.search_wrap .search input');
+const searchIconMob = document.querySelector('.tab_mob_header .h_search img');
+const searchMobWrap = document.querySelector('.search_wrap .search_tab_wrap');
+const backBtnMob = document.querySelector('.search_wrap .search_tab_wrap .back_icon');
+const closeTabBtnMob = document.querySelector('.search_wrap .search_tab_wrap .tab_close');
 const tabItem = document.querySelectorAll('.tab_keyword .item');
 const tabTitle = document.querySelector('.tab_title ul>li>a');
+const menuIconMob = document.querySelector('.tab_mob_header .h_inner .menu');
+const menuWrap = document.querySelector('.tab_mob_header .h_inner .menu_wrap');
+const closeMenu = document.querySelector('.tab_mob_header .h_inner .menu_wrap .close_btn img');
+const body = document.querySelector('body')
 
+menuIconMob.addEventListener("click", function(){
+  menuWrap.classList.add('active');
+});
 
-tabTitle.addEventListener("click", function(){
-  tabTitle.classList.add('active');
+closeMenu.addEventListener("click", function(){
+  menuWrap.classList.remove('active');
+});
+
+searchPc.addEventListener("click", function (){
+  searchPcWrap.classList.add('active')
+  searchPcBorder.classList.add('active');
 
 });
 
+closeBtnPc.addEventListener("click", function (){
+  searchPcWrap.classList.remove('active')
+  searchPcBorder.classList.remove('active');
+});
 
-function clickSearch (){
-  searchWrap.classList.add('active');
-  searchBorder.classList.add('active');
+function showSearchMob(){
+  searchMobWrap.classList.add('active')
+  body.classList.add('active');
 };
+searchIconMob.addEventListener("click",showSearchMob);
+searchMob.addEventListener("click", showSearchMob);
 
-search.addEventListener("click", clickSearch);
+closeTabBtnMob.addEventListener("click", function (){
+  searchMobWrap.classList.remove('active')
+  body.classList.remove('active');
+});
+backBtnMob.addEventListener("click", function (){
+  searchMobWrap.classList.remove('active')
+  body.classList.remove('active');
+});
+
 
 for(let i=0; i<tabItem.length; i++){
   tabItem[i].addEventListener("mouseover", function(){
@@ -27,36 +59,16 @@ for(let i=0; i<tabItem.length; i++){
   });
 };
 
-
-
- 
-
-/* tabItem.addEventListener("mouseover", function(){
-  tabItem.classList.add('active');
-})
- */
-
-
-/* search.addEventListener("click", function (){
-  searchWrap.classList.add('active')
-});
- */
-
-
-
-
-
-
-
-
-
-
 /* slider */
 var bannerS = new Swiper(".bannerS", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
-  autoplay: {delay: 5000}
+  autoplay: {delay: 5000},
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
 });
 
 

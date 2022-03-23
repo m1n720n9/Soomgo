@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='Title' content='숨고'>
+	<meta name='Subject' content='숨고'>
+	<meta name='Keywords' content='숨고 레슨 취미 클래스 숨은고수 이벤트'>
+	<meta name='Author' content='min'>
+	<meta name='Publisher' content='min'>
+	<meta name='Description' content='숨고에 오신 것을 환영합니다.'>
+	<meta name='Author-Date' content='20220323'>
+	<meta name='Robots' content='index,follow'>
     <title>숨고: 숨은고수 - 600만명이 선택한 생활서비스 고수 매칭</title>
-    
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/swiper-bundle.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,6 +20,11 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
+    <ul id="skip">
+		<li><a href="#header">헤더 바로가기</a></li>
+		<li><a href="#nav">메뉴 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
     <header>
         <div class="container">
             <div class="pc_header">
@@ -20,7 +32,7 @@
                     <div class="h_left">
                         <h1 class="logo"><a href="#"><img src="./img/icon-navi-logo.svg" alt="로고"></a></h1>
                         <div class="h_search">
-                            <form action="#" method="post" name="service_search">
+                            <form action="#" method="post" name="service_search_p">
                                 <div class="search_icon"><img src="./img/icon-header-search.svg" alt="검색 아이콘"></div>
                                 <input type="text" name="service_search" id="service_search" placeholder="어떤 서비스가 필요하세요?">
                             </form>
@@ -28,7 +40,7 @@
                                 <div class="search_tab">
                                     <div class="tab_title">
                                         <ul>
-                                            <li class="keyword"><a href="javascript:">인기키워드</a></li>
+                                            <li class="keyword"><a class="active" href="javascript:">인기키워드</a></li>
                                             <li class="recent"><a href="javascript:">최근 검색한 서비스</a></li>
                                         </ul>
                                     </div>
@@ -77,7 +89,7 @@
                     <div class="h_search"><img src="./img/icon-header-tab-search.svg" alt="검색"></div>
                     <div class="menu_wrap">
                         <div class="close_btn">
-                            <button><img src="./img/close-btn.svg" alt="닫기"></button>
+                            <button><img src="./img/closeBtn.svg" alt="닫기"></button>
                         </div>
                         <div class="login">
                             <h2>로그인 해주세요</h2>
@@ -87,8 +99,8 @@
                             <ul class="nav">
                                 <li><a href="#">고수가입</a></li>
                                 <li><a href="#">회원가입</a></li>
-                                <li><a href="#">고수찾기</a></li>
-                                <li><a href="#">바로구매</a></li>
+                                <li><a href="#">고수 찾기</a></li>
+                                <li class="market"><a href="#">마켓 <img src="./img/icon-new-full.svg" alt="new"> </a></li>
                             </ul>
                         </nav>
                     </div>
@@ -102,20 +114,20 @@
                 <div class="search">
                     <form action="#" method="post" name="service_search">
                         <div class="search_icon"><img src="./img/icon-header-search.svg" alt="검색 아이콘"></div>
-                        <input type="text" name="service_search" id="service_search" placeholder="어떤 서비스가 필요하세요?">
+                        <input type="text" name="service_search" id="service_search_m" placeholder="어떤 서비스가 필요하세요?">
                     </form>
                 </div>
                 <div class="search_tab_wrap">
                     <div class="tab_search">
                         <form action="#" method="post" name="service_search">
-                            <div class="search_icon"><img src="./img/search_tab_back.svg" alt="뒤로가기"></div>
+                            <div class="back_icon"><img src="./img/search_tab_back.svg" alt="뒤로가기"></div>
                             <input type="text" name="service_search" id="service_search" placeholder="어떤 서비스가 필요하세요?">
                         </form>
                     </div>
                     <div class="search_tab">
                         <div class="tab_title">
                             <ul>
-                                <li class="keyword"><a href="javascript:">인기키워드</a></li>
+                                <li class="keyword "><a class="active" href="javascript:">인기키워드</a></li>
                                 <li class="recent"><a href="javascript:">최근 검색한 서비스</a></li>
                             </ul>
                         </div>
