@@ -2,7 +2,12 @@
 body{font-family: 'Noto Sans KR', sans-serif; padding-top: 4.5rem;}
 body.active{overflow: hidden;}
 /* 공통속성 */
+<<<<<<< HEAD
 .container{width: 970px; margin: 0 auto;} /* 970px */
+=======
+.container{width: 60.625rem; margin: 0 auto;} /* 970px */
+section>h3{text-indent: -9999px;}
+>>>>>>> 9e902add08704daf304650c2086dd5653aba2265
 
 /* layout */
 header{width: 100%; height: 72px; display: flex; align-items: center; position: fixed; top: 0; background: #fff; z-index: 998; /* border-bottom: 1px solid #f2f2f2; */}
@@ -153,7 +158,7 @@ header{width: 100%; height: 72px; display: flex; align-items: center; position: 
 .b_pro_S .review img{width: 14px;}
 .b_pro_S .review span{font-size: 12px;}
 .b_pro_S .review strong{font-size: 14px;}
-.b_pro_S {width: 100%; height: 100%; margin-bottom: 80px;}
+.b_pro_S {width: 100%; height: 100%; margin-bottom: 60px;}
 .b_pro_S .swiper-slide {
 /* Center slide text vertically */
 text-align: center;
