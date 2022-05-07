@@ -60,7 +60,7 @@ for(let i=0; i<tabItem.length; i++){
 };
 
 /* slider */
-var bannerS = new Swiper(".bannerS", {
+let bannerS = new Swiper(".bannerS", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
@@ -71,8 +71,7 @@ var bannerS = new Swiper(".bannerS", {
   },
 });
 
-
-var main_slider = new Swiper(".main_slider", {
+let main_slider = new Swiper(".main_slider", {
   slidesPerView: 2,
   spaceBetween: 8,
   slidesPerGroup: 1,
@@ -82,19 +81,19 @@ var main_slider = new Swiper(".main_slider", {
   },
   breakpoints: {
     481: {
-      slidesPerView: 3,  //브라우저가 481보다 클 때
+      slidesPerView: 3,  
       spaceBetween: 12,
       slidesPerGroup: 1,
     },
     991: {
-      slidesPerView: 4,  //브라우저가 991보다 클 때
+      slidesPerView: 4, 
       spaceBetween: 16,
       slidesPerGroup: 2,
     },
   },
 });
 
-var b_pro_S = new Swiper(".b_pro_S", {
+let b_pro_S = new Swiper(".b_pro_S", {
   slidesPerView: 3,
   spaceBetween: 8,
   slidesPerGroup: 1,
@@ -104,24 +103,24 @@ var b_pro_S = new Swiper(".b_pro_S", {
   },
   breakpoints: {
     481: {
-      slidesPerView: 4,  //브라우저가 481보다 클 때
+      slidesPerView: 4, 
       spaceBetween: 12,
       slidesPerGroup: 1,
     },
     769: {
-      slidesPerView: 5,  //브라우저가 481보다 클 때
+      slidesPerView: 5, 
       spaceBetween: 12,
       slidesPerGroup: 1,
     },
     991: {
-      slidesPerView: 6,  //브라우저가 991보다 클 때
+      slidesPerView: 6, 
       spaceBetween: 16,
       slidesPerGroup: 2,
     },
   },
 });
 
-var story_S = new Swiper(".story_S", {
+let story_S = new Swiper(".story_S", {
   slidesPerView: 2,
   spaceBetween: 8,
   slidesPerGroup: 1,
@@ -131,19 +130,19 @@ var story_S = new Swiper(".story_S", {
   },
   breakpoints: {
     769: {
-      slidesPerView: 3,  //브라우저가 991보다 클 때
+      slidesPerView: 3,
       spaceBetween: 16,
       slidesPerGroup: 1,
     },
     991: {
-      slidesPerView: 3,  //브라우저가 991보다 클 때
+      slidesPerView: 3, 
       spaceBetween: 16,
       slidesPerGroup: 1,
     },
   },
 });
 
-var ps_S = new Swiper(".ps_S", {
+let ps_S = new Swiper(".ps_S", {
   spaceBetween: 30,
   hashNavigation: {
     watchState: true,
